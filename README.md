@@ -61,7 +61,7 @@ This project demonstrates **end-to-end e-commerce functionality** including prod
 
 ---
 
-**This project reflects 200+ hours of focused development, showcasing my ability to build secure, efficient, and scalable full-stack applications. Ideal for demonstrating backend expertise and full-stack capabilities to recruiters.**
+**This project represents over 200+ hours of dedicated development, combining advanced backend architecture, secure authentication, and optimized performance. It highlights my ability to design and implement full-stack solutions with real-world features like role-based access, JWT authentication, pagination, and efficient data handling. Every line of code reflects attention to scalability, maintainability, and production readiness, demonstrating not just technical expertise but a commitment to building professional-grade applications that solve real business problems. This is a showcase of both my problem-solving skills and my hands-on proficiency in modern full-stack development. **
 
 ---
 
