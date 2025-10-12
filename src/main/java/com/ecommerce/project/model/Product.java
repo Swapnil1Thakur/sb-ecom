@@ -9,6 +9,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -37,14 +40,20 @@ public class Product {
     private double specialPrice;
 
 
-
+    // Many products belong to one category
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
 
+    // Many products belong to one seller/user
     @ManyToOne
     @JoinColumn(name = "seller_id")
     private User user;
+
+    // One product can appear in many cart items (ek product kai carts me ho sakta hai)
+    @OneToMany(mappedBy = "product", cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)           //Ek product kai carts me ho sakta hai. (e.g. “iPhone 15” multiple users ke carts me add ho sakta hai.
+    private List<CartItem> products = new ArrayList<>();
+
 
 
 
