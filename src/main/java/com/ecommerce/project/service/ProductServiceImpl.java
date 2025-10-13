@@ -249,6 +249,11 @@ public class ProductServiceImpl implements  ProductService{
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException("Product","productId",productId));
 
+
+        List<Cart> carts = cartRepository.findCartsByProductId(productId);
+        carts.forEach(cart -> cartService.deleteProductFromCart(cart.getCartId(), productId));
+
+
         //if when found then
         productRepository.delete(product);
 
