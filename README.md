@@ -1,4 +1,4 @@
-# **EcomEase – Full Stack E-Commerce Application**
+# **ShopNest – Full Stack E-Commerce Application**
 
 **A secure, scalable, and full-featured e-commerce platform built with Spring Boot, Spring Security, JWT, Hibernate, and PostgreSQL.**
 
